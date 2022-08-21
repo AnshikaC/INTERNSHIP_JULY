@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title_block %}    
+    Thank You Page
+{% endblock %}
+
+{% block body_block %}    
+    {% if a <= 50 %}
+    <h1>Thank you for registering with us.</h1>
+
+    <p>These are your details:<br>
+        Name: {{ n }} <br>
+        Age: {{ a }}
+    </p>
+    {% else %}
+    <h1> {{ n }}, please get out of here. </h1>
+    {% endif %}
+{% endblock %}
+
+
+
+
+
+
+
+
